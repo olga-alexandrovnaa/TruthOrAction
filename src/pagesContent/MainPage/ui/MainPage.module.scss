@@ -1,0 +1,33 @@
+@import "@/app/styles/mixins/adaptive.scss";
+
+.MainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding-top: 50px;
+
+    .header {
+        margin-top: 2rem;
+    }
+    .btn {
+        background-color: var(--primary);
+        min-width: 20rem;
+        color: var(--secondary-text);
+        margin-top: 1rem;
+    }
+    .rulesHeader {
+        font-size: var(--fontSize);
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+    }
+    .rules {
+        font-size: var(--fontSizeSmall);
+        justify-content: flex-start;
+        max-width: 15rem;
+        .rule {
+            line-height: 1.2rem;
+        }
+    }
+}

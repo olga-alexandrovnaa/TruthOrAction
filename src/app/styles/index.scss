@@ -1,0 +1,32 @@
+@import 'reset.scss';
+@import 'variables/global.scss';
+@import "mixins/adaptive.scss";
+@import "mixins/adaptive-font.scss";
+@import "fonts/fonts.scss";
+
+.app {
+  background-color: var(--main-bg-color);
+  font-family: var(--mainFontFamily);
+  font-size: var(--fontSizeLarge);
+  font-weight: var(--fontWeight);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 20px);
+    max-width: calc(100vw - 20px);
+    min-width: calc(100vw - 20px);
+    
+
+    @include size-more-than-laptop {
+      padding: 30px;
+      min-height: calc(100vh - 60px);
+      max-width: 980px;
+      min-width: 980px;
+    }
+  }
+}

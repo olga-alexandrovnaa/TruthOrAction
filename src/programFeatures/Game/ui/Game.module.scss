@@ -1,0 +1,51 @@
+@import "@/app/styles/mixins/adaptive.scss";
+
+.GameForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding: 20px;
+    padding-top: 50px;
+
+    .text{
+        margin-top: 3rem;
+        text-align: center;
+
+    }
+    .gameOverText{
+        color: var(--primary);
+        text-align: center;
+    }
+    .nextTaskActions{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        .taskBtn{
+            margin: 1rem;
+            background-color: var(--btn-active);
+            color: var(--secondary-text);
+            width: 8rem;
+        }
+        .taskBtnDisabled{
+            background-color: var(--btn-disabled);
+        }
+    }
+    .footer{
+        position: absolute;
+        bottom: 0px;
+
+        @include size-more-than-laptop {
+            position: relative;
+            margin-top: 2rem;
+        }
+        
+        .restartBtn{
+            margin: 1rem;
+            min-width: 20rem;
+            background-color: var(--primary);
+            color: var(--secondary-text);
+        }
+    }
+}
