@@ -12,8 +12,8 @@ export enum AppRoutes {
 }
 
 // export const getRoutelogin = () => '/login';
-export const getRouteMain = () => '/';
-export const getRouteGame = () => '/game';
+export const getRouteMain = () => '/TruthOrAction/';
+export const getRouteGame = () => '/TruthOrAction/game';
 export const getRouteNOT_FOUND = () => '*';
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {

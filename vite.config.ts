@@ -7,6 +7,7 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
+    base: '/TruthOrAction/',
     define: {
       __IS_DEV__: JSON.stringify(true),
       __API__: JSON.stringify(env.API),
